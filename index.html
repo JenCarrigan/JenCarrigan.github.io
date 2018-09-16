@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class = "bg">
+            <h1>United States Currency Converter</h1>
+            
+            <div class = "getStarted">
+                <h2>Get Your Conversion</h2>
+                <form>
+                    <label for="dateInput1">Start Date</label>
+                    <input type="date" name="dateInput1" id="dateInput1">
+                    <label for="dateInput2">End Date</label>
+                    <input type="date" name="dateInput2" id="dateInput2">
+                    <label for="country">Convert US Dollars to...</label>
+                    <select name="countrySelect" id="country">
+                        <option>Choose a Country</option>
+                    </select>
+                    <input type="submit" id="dateSubmit" value="Submit">
+                </form>
+            </div>
+        </div>
+        
+        <div id = "results" class = "hide">
+            <h2 id = "yourResults"></h2>
+            <canvas id = "currencyChart"></canvas>
+        </div>
+        
+        <div id="footer">
+            <div class="footerBox">
+                <button class="footerButton" id="contactMe">Contact Me</button>
+            </div>
+            <div class="footerBox">
+                <p>&copy; Jennifer Carrigan</p>
+            </div>
+            <div class="footerBox">
+                <button class="footerButton" id="github">Github</button>
+            </div>
+            <span class="stretch"></span>
+        </div>
+            
+        
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        
+    </body>
+    
+    
+</html>
